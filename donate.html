@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support Baptist Union Sierra Leone through your gifts. Contact the church office or use the form below to give or request giving details.">
+  <title>Give | Baptist Union Sierra Leone</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Page-specific additions */
+    .donate-hero {
+      background: var(--color-bg-alt);
+      padding: 2rem 1rem;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .donate-hero h1 {
+      margin: 0 0 0.5rem;
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      color: var(--color-primary);
+    }
+    .donate-hero p {
+      margin: 0;
+      max-width: 55ch;
+      font-size: 1.1rem;
+    }
+    .method-card {
+      background: #fff;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 1.35rem;
+      box-shadow: var(--shadow);
+      height: 100%;
+    }
+    .method-card h3 {
+      margin: 0 0 0.6rem;
+      font-size: 1.15rem;
+      color: var(--color-primary);
+    }
+    .method-card p,
+    .method-card li {
+      margin: 0 0 0.5rem;
+      font-size: 0.98rem;
+    }
+    .method-card ul {
+      margin: 0.5rem 0 0;
+      padding-left: 1.2rem;
+    }
+    .form-group {
+      margin-bottom: 1.15rem;
+    }
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+      color: var(--color-text);
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.7rem 0.85rem;
+      font-size: 1rem;
+      font-family: inherit;
+      border: 1.5px solid var(--color-border);
+      border-radius: 6px;
+      background: #fff;
+      color: var(--color-text);
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: 3px solid var(--color-accent);
+      outline-offset: 1px;
+      border-color: var(--color-primary);
+    }
+    .form-group textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+    .form-note {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+      margin-top: 0.35rem;
+    }
+    .required {
+      color: #b00020;
+    }
+    .form-actions {
+      margin-top: 1.5rem;
+    }
+    .bank-box {
+      background: var(--color-bg-alt);
+      border-left: 4px solid var(--color-accent);
+      padding: 1rem 1.15rem;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin: 1rem 0;
+    }
+    .bank-box p {
+      margin: 0.25rem 0;
+    }
+    .success-message {
+      display: none;
+      background: #e8f5e9;
+      border: 1px solid #a5d6a7;
+      color: #1b5e20;
+      padding: 1rem 1.15rem;
+      border-radius: var(--radius);
+      margin-bottom: 1.25rem;
+      font-weight: 600;
+    }
+    .success-message.is-visible {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark" aria-hidden="true">BU</span>
+        <span>Baptist Union<br>Sierra Leone</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" id="nav-toggle">
+        Menu
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="plan-your-visit.html">Plan Your Visit</a></li>
+          <li><a href="index.html#ministries">Ministries</a></li>
+          <li><a href="donate.html" aria-current="page">Donation</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="donate-hero" aria-labelledby="donate-heading">
+      <div class="section-inner">
+        <h1 id="donate-heading">Donation to Baptist Union Sierra Leone</h1>
+        <p>Your generosity supports worship, children’s ministry, pastoral care, and community outreach in Freetown and beyond. Thank you for partnering with us.</p>
+      </div>
+    </section>
+
+    <!-- Quick contact options – clear on mobile -->
+    <section class="key-info" aria-label="Ways to give">
+      <div class="key-info-grid">
+        <article class="key-card">
+          <h2>Bank (SLCB)</h2>
+          <p>Account: 1234689578</p>
+          <p class="detail">Account name: BUSL</p>
+        </article>
+        <article class="key-card">
+          <h2>Orange Money</h2>
+          <p><a href="tel:+23279057884">+232 79 057 884</a></p>
+          <p class="detail">Send and use your name as reference</p>
+        </article>
+        <article class="key-card">
+          <h2>Africell Money</h2>
+          <p><a href="tel:+23288519191">+232 88 519 191</a></p>
+          <p class="detail">Send and use your name as reference</p>
+        </article>
+        <article class="key-card">
+          <h2>Sunday Offering</h2>
+          <p>In person</p>
+          <p class="detail">During the 10:30 AM service</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="methods-heading">
+      <div class="section-inner">
+        <h2 id="methods-heading">How You Can Give</h2>
+        <div class="card-grid three">
+          <article class="method-card">
+            <h3>1. Sunday Offering</h3>
+            <p>The simplest way. Bring your gift when you attend the 10:30 AM worship service. Offering bags are passed during the service.</p>
+          </article>
+          <article class="method-card">
+            <h3>2. Bank Transfer / Mobile Money</h3>
+            <p>You can give directly using the details below. Please use your full name as the payment reference so we can thank you properly.</p>
+            <div class="bank-box">
+              <p><strong>Bank Transfer (SLCB)</strong></p>
+              <p>Bank: Sierra Leone Commercial Bank (SLCB)</p>
+              <p>Account name: BUSL</p>
+              <p>Account number: 1234689578</p>
+            </div>
+            <div class="bank-box">
+              <p><strong>Orange Money</strong></p>
+              <p><a href="tel:+23279057884">+232 79 057 884</a></p>
+            </div>
+            <div class="bank-box">
+              <p><strong>Africell Money</strong></p>
+              <p><a href="tel:+23288519191">+232 88 519 191</a></p>
+            </div>
+          </article>
+          <article class="method-card">
+            <h3>3. Enquiry Form</h3>
+            <p>Fill in the form below. Tell us you would like to give and we will reply with the safest and most convenient method for you.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="enquiry-form" aria-labelledby="form-heading">
+      <div class="section-inner">
+        <h2 id="form-heading">Donation / Giving Enquiry</h2>
+        <p>This form does not process payments. It simply sends your request to the church office so we can help you give securely.</p>
+
+        <div class="success-message" id="form-success" role="status" aria-live="polite">
+          Thank you. Your enquiry has been recorded. Please also call or email the office if your matter is urgent.
+        </div>
+
+        <form id="donation-form" action="#" method="post" novalidate>
+          <div class="form-group">
+            <label for="full-name">Full name <span class="required" aria-hidden="true">*</span></label>
+            <input type="text" id="full-name" name="full-name" required autocomplete="name" aria-required="true">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email address <span class="required" aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" required autocomplete="email" aria-required="true">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+232 ...">
+            <p class="form-note">Optional but helpful if we need to call you.</p>
+          </div>
+
+          <div class="form-group">
+            <label for="purpose">Purpose of gift</label>
+            <select id="purpose" name="purpose">
+              <option value="general">General fund / Tithe</option>
+              <option value="children">Children’s ministry</option>
+              <option value="missions">Missions &amp; outreach</option>
+              <option value="building">Building / facilities</option>
+              <option value="other">Other (please specify below)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message or amount (optional)</label>
+            <textarea id="message" name="message" placeholder="Example: I would like to give Le 500,000 toward children’s ministry. Please send mobile money details."></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Send Enquiry</button>
+          </div>
+        </form>
+
+        <p class="mt-2 form-note">
+          Prefer not to use the form? Call <a href="tel:+23279057884">+23279057884</a> or email
+          <a href="mailto:nonkokoroma@gmail.com?subject=Donation%20Enquiry">busl@gmail.org</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="thanks-heading">
+      <div class="section-inner">
+        <div class="next-step">
+          <h2 id="thanks-heading">Thank you for your generosity</h2>
+          <p>“Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver.”     2Corinthians 9:7</p>
+          <a class="btn btn-primary" href="index.html">Back to Home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <h2>Baptist Union Sierra Leone</h2>
+          <p>Gathering in Freetown to worship Jesus Christ,
+             make disciples, and serve our neighbours.</p>
+        </div>
+        <div>
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="plan-your-visit.html">Plan Your Visit</a></li>
+            <li><a href="donate.html">Give</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contact</h2>
+          <p>34 Bendugu Road<br>Bumbuna, Sierra Leone</p>
+          <p><a href="tel:+23279057884">+23279057884</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Baptist Union Sierra Leone. All rights reserved. Prototype for demonstration.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      // Mobile nav
+      var toggle = document.getElementById('nav-toggle');
+      var nav = document.getElementById('main-nav');
+      if (toggle && nav) {
+        toggle.addEventListener('click', function () {
+          var open = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', String(!open));
+          nav.classList.toggle('is-open', !open);
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+            toggle.setAttribute('aria-expanded', 'false');
+            nav.classList.remove('is-open');
+            toggle.focus();
+          }
+        });
+      }
+
+      // Simple form handling (prototype – no real backend)
+      var form = document.getElementById('donation-form');
+      var success = document.getElementById('form-success');
+      if (form && success) {
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          // Basic validation
+          var name = document.getElementById('full-name');
+          var email = document.getElementById('email');
+          if (!name.value.trim() || !email.value.trim()) {
+            alert('Please fill in your name and email address.');
+            return;
+          }
+          // Show success message (in a real site this would send to a server)
+          success.classList.add('is-visible');
+          form.reset();
+          success.focus();
+          // Scroll to message
+          success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
